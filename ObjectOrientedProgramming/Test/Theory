@@ -1,0 +1,23 @@
+Object Oriented Programming is a type of Programming paradigm. In this, we deal with classes and objects.
+Classes are a blueprint or we can say grouped function or behavior.
+Objects are instance of a class.
+
+There are 4 pillars of Object Oriented Programming:
+
+1. Inheritance: It means inheriting properties or methods  from the parent class. There is a parent class and child
+class and the child class inherits all the properties of the parent class and also have its own additional properties
+and methods. For example a child inherits the properties like walking , talking, physical appearances from parents.
+
+2. Polymorphism: When an object behaves differently in different place. We can understand from a simple example:
+Suppose you are a single indivisual and have different roles.Like you are a child for your parents, a student for your
+teacher, and friend to other people.This means you hold multiple roles as a single person.In polymorphism, the parent
+class and the child class has same methods and the child class overrides the parent class.
+
+3. Abstraction: It means hiding the complex implementation and showing only the essential features. we can understand
+this by an example: We have television in our houses and its remote. We just focus on the remote and television and not
+the internal working of the television like  how it works or how does the display shows.
+
+4. Encapsulation: It means encapsulating or binding the data into a single unit. It is used for data hiding. All the
+variables or features are private and can be only accessed by getters and setters method. This method is public and
+hence we can access those data. At first setters are used to set the data and then getters are used to get the data.
+For example the working of the television is hidden and encapsulated.
