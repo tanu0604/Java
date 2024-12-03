@@ -1,0 +1,12 @@
+Here are few important points on encapsulation:
+
+1. Encapsulation is a fundamental concept in object-oriented programming (OOP) that involves bundling data (variables)
+and methods (functions) that operate on the data into a single unit, typically a class. It also restricts direct access
+to some of the object's components, usually through access modifiers like private, protected, and public. This ensures
+data security and integrity.
+
+For example:By binding the code (methods) and data (variables) together, encapsulation allows controlled access and
+modification through getter and setter methods.It hides the internal details of an object from the outside world,
+promoting modularity and maintainability.
+
+2. The getter and setter methods are public and hence can be accessed to set the values and then get them.
