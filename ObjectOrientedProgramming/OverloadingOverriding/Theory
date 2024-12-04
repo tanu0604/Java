@@ -1,0 +1,28 @@
+Method Overloading
+Definition: Method overloading occurs when multiple methods in the same class have the same name but differ in the
+number or type of parameters (method signature). This is a compile-time polymorphism feature in Java and many other
+programming languages.
+
+Key Points:
+
+Methods must have the same name but differ in:
+The number of parameters.
+The type of parameters.
+The order of parameters.
+Return type alone cannot differentiate overloaded methods.
+It allows better readability and flexibility in using the same method name for different operations.
+
+
+Method Overriding
+
+Definition: Method overriding occurs when a subclass (child class) provides a specific implementation for a method that
+is already defined in its superclass (parent class). This is an example of runtime polymorphism.
+
+Key Points:
+
+The method in the subclass must have the same name, return type, and parameters as the method in the superclass.
+The method in the parent class must be inheritable (i.e., it cannot be private or final).
+The @Override annotation is typically used to indicate overriding (though it is optional).
+The overriding method can have less restrictive access modifiers but not more restrictive ones
+(e.g., protected can override public but not private).
+It is used to achieve dynamic method dispatch or runtime polymorphism.
