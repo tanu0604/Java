@@ -1,0 +1,40 @@
+Types of error:
+1. Syntax Error: Errors which occur because of wrong syntax. Eg: int a=9 here ';' is missing hence syntax error.
+
+2. Logical Error: Errors which occurs when there is some logical issue in the program. Let's understand with an example:
+public static int divide(int a , int b){
+return a*b ;
+}
+So the function says to divide but we multiply. Hence logical error.
+
+3. Runtime Error: The program is compiled correctly but during the program runs an error is thrown. It is called runtime
+error.
+Example given in Test.java
+
+
+Exception is an error that disrupts the normal flow of a program.It is an object that is thrown in runtime.
+
+Two Types of exceptions:
+1.Unchecked exception:These exceptions are not checked at compile time and exceptions will come at runtime. They are a
+subclass of Runtime Exception.
+Example: NullPointerException, ArithmeticException
+
+2. Checked Exceptions:These exceptions are checked at compile time.The compiler ensures that these exceptions are either
+handled using a try-catch block or declared using the throws keyword in the method signature. These are a subclass of
+Exception.
+Example: FileNotFound, ClassNotFound, IOException
+
+
+
+Some important keywords:
+throw: to forcefully throw an exception.
+
+throws- It is used in method declaration to specify that this method might throw one or more exceptions.
+It informs the compiler that this method ha a potential to throw an exception.
+
+final: to make a variable, methods or classes immutable.
+
+finally: the finally block is always executed after the try and catch blocks, regardless of whether an exception is
+thrown or caught. It is used to perform cleanup operations.
+
+finalize:it is a method in Java used to perform cleanup operations before an object is garbage collected.
