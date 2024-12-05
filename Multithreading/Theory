@@ -1,0 +1,26 @@
+Multitasking: When multiple application performs simultaneously is called multitasking.
+
+Multithreading: Multithreading is the process of simultaneously executing multiple tasks in a single application.
+
+Thread:
+A thread is the smallest unit of a process that can be scheduled and executed independently by the operating system.
+A process can have multiple threads running concurrently.
+
+**Example of Multitasking and  Multithreading**
+
+Imagine a manager who assigns four projects to four teams. Each team works independently on its project, ensuring all
+four projects are completed simultaneously. This represents MULTITASKING, where each team is like a process working
+in parallel. Now, within each team, members collaborate to complete their assigned project—one member writes code,
+another designs the UI, a third tests the application, and so on. These team members are like THREADS, working
+together on different parts of the same project concurrently. At the end, the team delivers a complete project.
+
+There are two ways of implementing threads
+1. By extending the Thread class : Shown in Example1
+2. By implementing the Runnable Interface: Shown in Example2
+
+Now, lifecycle of a thread:
+1. NEW- when the object of the thread is created.
+2. RUNNABLE: When the start method is called, it is ready to run.
+3. RUNNING: When is thread is being executed by the CPU.
+4. BLOCK/WAITING: When a thread is either waiting for a resource or waiting for another thread to execute.
+5. TERMINATED: When the thread is finished executing then its in the TERMINATED state.
