@@ -24,3 +24,17 @@ Now, lifecycle of a thread:
 3. RUNNING: When is thread is being executed by the CPU.
 4. BLOCK/WAITING: When a thread is either waiting for a resource or waiting for another thread to execute.
 5. TERMINATED: When the thread is finished executing then its in the TERMINATED state.
+
+
+Methods in Thread
+1. start()- starts the thread
+2. join()- causes the current thread to pause execution until t 's thread terminates.
+3. sleep()-pauses the execution of a current thread for a specified time.
+4. setPriority()- if there are multiple threads it sets priority of low , normal , high
+5. interrupt()- interrupts the thread and breaks the state of waiting or sleeping thread and throws an Interrupt exception.
+6. yield()- giving chance to each thread to execute.
+
+
+Types of thread
+1. User Thread- The thread which does the actual work
+2. Daemon Thread- The thread which runs in the background.JVM does not wait for daemon thread.
