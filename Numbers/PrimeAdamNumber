@@ -1,0 +1,92 @@
+package Numbers;
+import java.util.*;
+public class PrimeAdamNumber
+{
+    public static void main(String[] args) {
+        Scanner scanner=new Scanner(System.in);
+        System.out.print("Enter the lower limit: ");
+        int lowerLimit=scanner.nextInt();
+
+        System.out.print("Enter the upper limit: ");
+        int upperLimit=scanner.nextInt();
+
+        if (lowerLimit>upperLimit)
+        {
+            System.out.println("Enter limit properly.");
+            return;
+        }
+        //check whether the number is prime or not
+
+        int count=0;
+        for (int i = lowerLimit; i <=upperLimit; i++) {
+            int n1=i;
+            boolean isPrime=checkPrime(n1);
+            if(isPrime)
+            {
+                boolean isAdam=checkAdam(n1);
+                if (isAdam)
+                {
+                    count++;
+                    System.out.println(n1+" is a Prime Adam Number");
+                    System.out.println();
+                }
+                else
+                {
+                    System.out.println(n1+" is not a Prime Adam Number");
+                    System.out.println();
+                }
+
+            }
+            else
+            {
+                System.out.println(n1+" is not a prime adam number");
+                System.out.println();
+            }
+        }
+
+        System.out.println("The number of Prime Adam Numbers in between "+lowerLimit+" to "+upperLimit+" is: "+count);
+
+    }
+
+    public static boolean checkPrime(int num)
+    {
+        int n1=num;
+        int count=0;
+        for (int i=1;i<=n1;i++)
+        {
+            if (n1%i==0)count++;
+        }
+
+        return count==2;
+    }
+
+    public static boolean checkAdam(int num)
+    {
+        int n1=num;
+        int squareOfNum= n1*n1;
+        System.out.println("The square of "+num +" is: "+squareOfNum);
+
+        int reverseNum=reverse(n1);
+        System.out.println("Reverse of "+num+" is: "+reverseNum);
+
+        int squareOfReverse=reverseNum*reverseNum;
+        System.out.println("Square of the reverse num "+reverseNum+" is: "+squareOfReverse);
+        if (reverse(squareOfReverse)==squareOfNum)
+            return true;
+        return false;
+    }
+
+    public static int reverse(int n)
+    {
+        int n1=n;
+        int rev=0;
+        while (n1>0)
+        {
+            int d=n1%10;
+            rev=rev*10+d;
+            n1=n1/10;
+        }
+        return rev;
+    }
+
+}
